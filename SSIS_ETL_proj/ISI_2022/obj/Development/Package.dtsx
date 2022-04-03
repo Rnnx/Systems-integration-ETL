@@ -1,0 +1,1008 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/6/2022 12:14:03 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-U4URJO3"
+  DTS:CreatorName="DESKTOP-U4URJO3\King"
+  DTS:DTSID="{6F9C749E-13A3-463B-A04B-BDC462E87D06}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{6AB843D9-18FA-4552-B9B6-1870BE79B105}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.FIDatabase.Natalia]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{31DA8B9A-6D62-42D1-B61E-54F1799ED613}"
+      DTS:ObjectName="LocalHost.FIDatabase.Natalia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;User ID=Natalia;Initial Catalog=FIDatabase;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHMQmJF4UTEuGKYGErKZ15wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAHPiPasBP68S0obeYRQw7V8Aqj9SUCL/RVXR9NHVlbPgAAAAAOgAAAAAIAACAAAACZlm3S5qwe0V6DJv2KT11D7WQf0jucncsFRE5Qpu58+CAAAAC1qKEaU2YE4xH0WWDfXw1drzz8aQoXgZJ2OMxtaNR2ukAAAABRTat6fUaER8x0JEY1SyHSJxOwQ8lnN1YfFHkCddj/CL31sFYuprqN1JCVJO0B4FreIekp7rJ/psTz7GI/frSk</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.FIDatabase.Natalia1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{53C0EBFC-FCAF-4BFB-B49B-66D506889E69}"
+      DTS:ObjectName="LocalHost.FIDatabase.Natalia1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;User ID=Natalia;Initial Catalog=FIDatabase;Persist Security Info=True;Application Name=SSIS-Package-{53C0EBFC-FCAF-4BFB-B49B-66D506889E69}LocalHost.FIDatabase.Natalia1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHMQmJF4UTEuGKYGErKZ15wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADFDK34Q/sim3ZZ3BMsFxoSYi7ymvcM0ONtu72tqsRAwwAAAAAOgAAAAAIAACAAAADdU7fe1VBIGEX5n4EB5BmDwXtdmkWeSxvy5B2IUUfzWiAAAAB5FF4KU9k/AA4+WnmIh8cnzlflw6Tv0oFcgFO5QQBk9EAAAAAK3xjn+pFdrpGYwQE8uEmm28G6zrtdlTsFiIHU44DAhaKHAgIYqI47L6QB6eqFd6BnpNru+b/TA1hRTgaZXvE+</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.HRDatabase.Natalia]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{930DD839-B216-412A-9D96-624EFDDDF803}"
+      DTS:ObjectName="LocalHost.HRDatabase.Natalia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;User ID=Natalia;Initial Catalog=HRDatabase;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHMQmJF4UTEuGKYGErKZ15wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABCnk8CZDnWUw4mrpShSpc9/mlyRBRd1BefCvNp46sPiAAAAAAOgAAAAAIAACAAAADEGz38rP9l4f6VSs6b+Htbc3TxajolzXTGH9kZzOsOdSAAAABbKMnD81wp6ckstOzN8yXdoMRtD6+D0OT6VZcThSaJEEAAAADlrRSU8nFw9gAddyLauJe/yjOdTdKOfNmAi54J0C68WEGBU7PB3wPnZnK4o5/N4ArJsdNST4ba0DRrZdQlVDDF</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.HRDatabase.Natalia1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{97D06F0B-3041-4D93-86D8-0B4682EB7006}"
+      DTS:ObjectName="LocalHost.HRDatabase.Natalia1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;User ID=Natalia;Initial Catalog=HRDatabase;Persist Security Info=True;Application Name=SSIS-Package-{97D06F0B-3041-4D93-86D8-0B4682EB7006}LocalHost.HRDatabase.Natalia1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHMQmJF4UTEuGKYGErKZ15wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADo126ggOp4WIzpmbuCXIhx9lm545Ev91LZuTuj6uC4awAAAAAOgAAAAAIAACAAAAAx7GhDvahj/w0Er1UCUwfw4+SbdPX8nMQRLhz74QCjMCAAAACocGhdmqvLJ6uVP+P5r3KpGspfe1NY0yM53YDLKFWk6UAAAACEXWOjoElaUx28b5E5IsQJenark6xqhrWMaROJSzFiDVC5575k28GLgEO14wgzRTx81LwHcUkSqLGqs/3yuULw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\HR View -&gt; FI Stage (OLE_DB)"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{039CCB4E-762F-459F-AC41-27EECE0E8835}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="HR View -&gt; FI Stage (OLE_DB)"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input].Columns[NazwaOdbiorcy]"
+                      cachedDataType="wstr"
+                      cachedLength="46"
+                      cachedName="NazwaOdbiorcy"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaOdbiorcy]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input].Columns[NazwaWaluty]"
+                      cachedDataType="wstr"
+                      cachedLength="24"
+                      cachedName="NazwaWaluty"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaWaluty]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaOdbiorcy]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="35"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaOdbiorcy]"
+                      name="Copy of NazwaOdbiorcy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaOdbiorcy]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaWaluty]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="35"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaWaluty]"
+                      name="Copy of NazwaWaluty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaWaluty]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input].Columns[Imie]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Imie"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input].Columns[Nazwisko]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="Nazwisko"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input].Columns[KodWaluty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="KodWaluty"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaOdbiorcy]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="46"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaOdbiorcy]"
+                      name="NazwaOdbiorcy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]} + " " + #{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Imie + " " + Nazwisko</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[DataZlecenia]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[DataZlecenia]"
+                      name="DataZlecenia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaWaluty]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="24"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[NazwaWaluty]"
+                      name="NazwaWaluty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "ARS" ? "Peso argentyńskie" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "AUD" ? "Dolar australijski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "EUR" ? "Euro" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "BRL" ? "Real brazylijski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "CAD" ? "Dolar kanadyjski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "CHF" ? "Frank szwajcarski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "CNY" ? "Juan renminbi" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "DKK" ? "Korona duńska" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "EGP" ? "Funt egipski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "HDK" ? "Dolar hongkoński" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "ILS" ? "Nowy szekel izraelski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "INR" ? "Rupia indyjska" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "JPY" ? "Jen japoński" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "KWD" ? "Dinar kuwejcki" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "MXN" ? "Peso meksykański" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "NGN" ? "Naira nigeryjska" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "PLN" ? "Złoty polski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "SGD" ? "Dolar singapurski" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "GBP" ? "Brytyjski funt szterling" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "USD" ? "Dolar amerykański" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "ZMK" ? "Kwacha zambijska" : (#{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]} == "ZWD" ? "Dolar Zimbabwe" : #{Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]}))))))))))))))))))))))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(KodWaluty == "ARS" ? "Peso argentyńskie" : (KodWaluty == "AUD" ? "Dolar australijski" : (KodWaluty == "EUR" ? "Euro" : (KodWaluty == "BRL" ? "Real brazylijski" : (KodWaluty == "CAD" ? "Dolar kanadyjski" : (KodWaluty == "CHF" ? "Frank szwajcarski" : (KodWaluty == "CNY" ? "Juan renminbi" : (KodWaluty == "DKK" ? "Korona duńska" : (KodWaluty == "EGP" ? "Funt egipski" : (KodWaluty == "HDK" ? "Dolar hongkoński" : (KodWaluty == "ILS" ? "Nowy szekel izraelski" : (KodWaluty == "INR" ? "Rupia indyjska" : (KodWaluty == "JPY" ? "Jen japoński" : (KodWaluty == "KWD" ? "Dinar kuwejcki" : (KodWaluty == "MXN" ? "Peso meksykański" : (KodWaluty == "NGN" ? "Naira nigeryjska" : (KodWaluty == "PLN" ? "Złoty polski" : (KodWaluty == "SGD" ? "Dolar singapurski" : (KodWaluty == "GBP" ? "Brytyjski funt szterling" : (KodWaluty == "USD" ? "Dolar amerykański" : (KodWaluty == "ZMK" ? "Kwacha zambijska" : (KodWaluty == "ZWD" ? "Dolar Zimbabwe" : KodWaluty))))))))))))))))))))))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Stage].[StageFI]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS,FIRE_TRIGGERS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.FIDatabase.Natalia]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.FIDatabase.Natalia]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DataZlecenia]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DataZlecenia"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DataOtrzymaniaZlecenia]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output].Columns[DataZlecenia]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Firma]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Firma"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Zleceniodawca]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Firma]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Adres]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Adres"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AdresOdbiorcy]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Adres]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[KontoBankowe]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="40"
+                      cachedName="KontoBankowe"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NumerKontaOdbiorcy]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KontoBankowe]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of NazwaWaluty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="35"
+                      cachedName="Copy of NazwaWaluty"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NazwaWaluty]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaWaluty]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Pensja]"
+                      cachedDataType="numeric"
+                      cachedName="Pensja"
+                      cachedPrecision="8"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[KwotaUSD]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pensja]" />
+                    <inputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of NazwaOdbiorcy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="35"
+                      cachedName="Copy of NazwaOdbiorcy"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NazwaOdbiorcy]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of NazwaOdbiorcy]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[StageId]"
+                      dataType="i4"
+                      name="StageId" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DataOtrzymaniaZlecenia]"
+                      dataType="dbTimeStamp"
+                      name="DataOtrzymaniaZlecenia" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Zleceniodawca]"
+                      codePage="1252"
+                      dataType="str"
+                      length="35"
+                      name="Zleceniodawca" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NazwaOdbiorcy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="35"
+                      name="NazwaOdbiorcy" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AdresOdbiorcy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AdresOdbiorcy" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NumerKontaOdbiorcy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NumerKontaOdbiorcy" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NazwaWaluty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="35"
+                      name="NazwaWaluty" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[KwotaUSD]"
+                      dataType="numeric"
+                      name="KwotaUSD"
+                      precision="9"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Isi].[ZlecenieWyplat]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.HRDatabase.Natalia]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.HRDatabase.Natalia]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Firma]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Firma]"
+                      length="6"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Firma]"
+                      name="Firma"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imie]"
+                      length="20"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]"
+                      name="Imie"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                      length="25"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                      name="Nazwisko"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Adres]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Adres]"
+                      length="50"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Adres]"
+                      name="Adres"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KontoBankowe]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KontoBankowe]"
+                      length="40"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KontoBankowe]"
+                      name="KontoBankowe"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pensja]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pensja]"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pensja]"
+                      name="Pensja"
+                      precision="8"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaKraju]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaKraju]"
+                      length="40"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaKraju]"
+                      name="NazwaKraju"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KodWaluty]"
+                      length="3"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].Columns[KodWaluty]"
+                      name="KodWaluty"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Firma]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="Firma" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imie]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="Imie" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Nazwisko" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Adres]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Adres" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KontoBankowe]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="KontoBankowe" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pensja]"
+                      dataType="numeric"
+                      name="Pensja"
+                      precision="9"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaKraju]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="NazwaKraju" />
+                    <externalMetadataColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KodWaluty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="KodWaluty" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Firma]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Firma]"
+                      name="Firma" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imie]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imie]"
+                      name="Imie" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                      name="Nazwisko" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Adres]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Adres]"
+                      name="Adres" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KontoBankowe]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KontoBankowe]"
+                      name="KontoBankowe" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pensja]"
+                      dataType="numeric"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pensja]"
+                      name="Pensja"
+                      precision="9"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaKraju]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaKraju]"
+                      name="NazwaKraju" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KodWaluty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KodWaluty]"
+                      name="KodWaluty" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\HR View -&gt; FI Stage (OLE_DB).Paths[Data Conversion Output]"
+              endId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\HR View -&gt; FI Stage (OLE_DB).Paths[Derived Column Output]"
+              endId="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\HR View -&gt; FI Stage (OLE_DB).Paths[OLE DB Source Output]"
+              endId="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Wykonaj Transakcje"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B03CE278-6E2B-4D6B-AD1E-4C04A55844C2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Wykonaj Transakcje"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{31DA8B9A-6D62-42D1-B61E-54F1799ED613}"
+          SQLTask:SqlStatementSource="exec [Isi].[uspDodajTransakcje]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="233,42"
+          Id="Package\HR View -&gt; FI Stage (OLE_DB)"
+          TopLeft="22.181818181818,21.1818181818182" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Wykonaj Transakcje"
+          TopLeft="531.181818181818,23.727272727273" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\HR View -&gt; FI Stage (OLE_DB)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="186,42"
+          Id="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1"
+          TopLeft="66,315" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source"
+          TopLeft="77,24" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\HR View -&gt; FI Stage (OLE_DB)\Derived Column 1"
+          TopLeft="73,127" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\HR View -&gt; FI Stage (OLE_DB)\Data Conversion 1"
+          TopLeft="75,218" />
+        <EdgeLayout
+          Id="Package\HR View -&gt; FI Stage (OLE_DB).Paths[OLE DB Source Output]"
+          TopLeft="156,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\HR View -&gt; FI Stage (OLE_DB).Paths[Derived Column Output]"
+          TopLeft="158.25,169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\HR View -&gt; FI Stage (OLE_DB).Paths[Data Conversion Output]"
+          TopLeft="159.5,260">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\HR View -&gt; FI Stage (OLE_DB)\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
